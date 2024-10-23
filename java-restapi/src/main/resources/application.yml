@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+# https://jsonplaceholder.typicode.com/users
+api:
+  url:
+    domain: "jsonplaceholder.typicode.com"
+    endpoint:
+      user: "users"
+      post: "posts"
+
+spring:
+  datasource:
+    driver-class-name: "org.postgresql.Driver"
+    # driverClassName: "com.mysql.jdbc.Driver"
+    # url: "jdbc:mysql://127.0.0.1:3306/bootcamp_2405p"
+    url: "jdbc:postgresql://localhost:5432/bc2405"
+    username: "root"
+    password: "admin1234"
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: create
